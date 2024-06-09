@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Android
+
     if (UniversalPlatform.isWeb) {
-      debugPrint("Android");
-      // Material UI Presentation
-      return cupertinoWidget(context, 'Hi Android with Material!');
+      debugPrint("Web");
+      
+      return cupertinoWidget(context, 'Hi Android with Cupertino!');
     } 
     // iOS
     else if (UniversalPlatform.isAndroid) {
